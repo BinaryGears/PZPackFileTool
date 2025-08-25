@@ -14,6 +14,14 @@ public:
 	EntireTexturePNG_();
 	~EntireTexturePNG_();
 
+	uint32_t mGetCharCount();
+	std::string mGetName();
+	uint32_t mGetTotalSubtextures();
+
+	void mSetCharCount(uint32_t name_char_count);
+	void mSetName(char name);
+	void mSetTotalSubtextures(uint32_t total_sub_textures);
+
 private:
 	uint32_t name_char_count = 0;
 	std::string name = {};
